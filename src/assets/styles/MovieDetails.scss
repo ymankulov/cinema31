@@ -1,0 +1,87 @@
+#movieDetails {
+  padding: 40px 0;
+  color: white;
+  .bg {
+    width: 100%;
+    min-height: 100vh;
+    backdrop-filter: blur(5px);
+    background: #0000007e;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+  }
+  .movieDetails {
+    display: flex;
+    position: relative;
+    .modal {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      top: -20px;
+      right: 15%;
+      width: 800px;
+      height: 600px;
+      background: white;
+      z-index: 5;
+      .modalImg {
+        width: 40%;
+        height: 85%;
+        padding: 30px;
+      }
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: black;
+        cursor: pointer;
+      }
+      h2 {
+        color: black;
+        position: absolute;
+        top: 100px;
+        right: 20%;
+      }
+    }
+    &--text {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-left: 40px;
+
+      .lp {
+        display: flex;
+        align-items: center;
+      }
+      .tim {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .pl {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          border: 6px solid rgb(233, 157, 5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h1 {
+            font-size: 25px;
+          }
+        }
+      }
+      .icons {
+        display: flex;
+        gap: 25px;
+        a {
+          background: #0f1a48;
+          padding: 19px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
